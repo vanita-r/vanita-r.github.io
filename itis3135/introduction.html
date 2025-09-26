@@ -13,11 +13,20 @@
               height: 10px;
             
           }
+          h1, h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+          h2 {
+            margin-top: 20px;
+            font-weight: bold;
+          }
           img {
             width: 300px;
             height: auto;
-            float: left;
+            /*float: left;*/
             margin-right: 75px;
+            align-items: center;
           }
       </style>
       <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -30,37 +39,38 @@
     <main>
         <h2>Introduction</h2>
         <h2>Vanita Mae Rabsatt || Vengeful Rabbit</h2>
-        <figure>
-            <img src="images/fasu-photshoot-selfie.JPG" alt="Vanita's selfie">
-            <figcaption>Selfie taken during my Filipino organization's photoshoot.</figcaption>
-        </figure>
-        <p></p>
-        <p><b>Hi, my name is Vanita and I am a junior majoring in computer science at UNC Charlotte. My concentration is web/app development & software engineering. I’m from Fort Mill, SC, but I was originally born near Detroit, MI.</b></p>
-        <ul>
-            <li><b>Personal Background:</b> In my free time, I enjoy spending time with friends, exploring the city, trying different cuisines, and practicing martial arts.</li>
-        
-            <li><b>Professional Background:</b> My computer science background began in sixth grade, and I started out learning HTML and CSS. Since then, I’ve completed online courses and certificates as well as projects which include languages such as JavaScript, Java, and Python. So far, I have interned at a start-up company called Comet, a college task applications manager, as a student flight test intern from July 2022 to September 2022.</li>
+
+        <section class="intro-container">
+            <h2 class="invisible">Heading</h2>
+            <figure>
+                <img src="images/fasu-photshoot-selfie.JPG" alt="Vanita's selfie">
+                <figcaption>Selfie taken during my Filipino organization's photoshoot.</figcaption>
+            </figure>
             
-            <li><b>Academic Background:</b> I am a second-year student at UNC Charlotte, pursuing a major in computer science with a focus on software engineering & web/app development. In my junior and senior year of high school, I took dual enrollment courses at the University of South Carolina at Lancaster.</li>
-            
-            <li><b>Primary Computer:</b> Apple, MacOS, MacBook Air Laptop, Dorm</li>
-            
-            <li>
-                <b>Courses I'm Taking, & Why:</b>
-                <ul>
-                    <li><b>ITSC 3688 - Comp & Their Impact on Society:</b> This is a required course I have to take for my major.</li>
-                    <li><b>MATH 1242 - Calculus II:</b> This is a requirement for computer science majors.</li>
-                    <li><b>ITSC 3146 - Intro Oper Syst & Networking:</b> I was informed that this course will be very helpful if I would like to pursue a career in software engineering.</li>
-                    <li><b>ITIS 3135 - Front-End Web App Development:</b> I have completed a course similar to this online during the pandemic and I enjoyed it. I also thought it would be a good idea to refresh my memory on JavaScript, HTML, and CSS.</li>
-                    <li><b>ITSC 2175 - Logic and Algorithms:</b> This was another course I was told will be very helpful for aspiring software engineers.</li>
-                </ul>
-            </li>
-            
-            <li><b>Funny/Interesting Item to Remember Me by:</b> I won a sparring tournament match against a 6’3 guy. I’m 5’1.</li>
-        </ul>
-        <p style="text-align: center;"><i>“Effort makes you. You will regret someday if you don’t do your best now.”</i></p>
-        <p style="text-align: center;"><i>Jungkook</i></p>
+            <ul>
+                <li><b>Hi, my name is Vanita and I am a junior majoring in computer science at UNC Charlotte. My concentration is web/app development & software engineering. I’m from Fort Mill, SC, but I was originally born near Detroit, MI.</b></li>
+                <li><b>Personal Background:</b> In my free time, I enjoy spending time with friends, exploring the city, trying different cuisines, and practicing martial arts.</li>
+                <li><b>Professional Background:</b> My computer science background began in sixth grade, and I started out learning HTML and CSS. Since then, I’ve completed online courses and certificates as well as projects which include languages such as JavaScript, Java, and Python. So far, I have interned at a start-up company called Comet, a college task applications manager, as a student flight test intern from July 2022 to September 2022.</li>
+                <li><b>Academic Background:</b> I am a second-year student at UNC Charlotte, pursuing a major in computer science with a focus on software engineering & web/app development. In my junior and senior year of high school, I took dual enrollment courses at the University of South Carolina at Lancaster.</li>
+                <li><b>Primary Computer:</b> Apple, MacOS, MacBook Air Laptop, Dorm</li>
+                <li>
+                    <b>Courses I'm Taking, & Why:</b>
+                    <ul>
+                        <li><b>ITSC 3688 - Comp & Their Impact on Society:</b> This is a required course I have to take for my major.</li>
+                        <li><b>MATH 1242 - Calculus II:</b> This is a requirement for computer science majors.</li>
+                        <li><b>ITSC 3146 - Intro Oper Syst & Networking:</b> I was informed that this course will be very helpful if I would like to pursue a career in software engineering.</li>
+                        <li><b>ITIS 3135 - Front-End Web App Development:</b> I have completed a course similar to this online during the pandemic and I enjoyed it. I also thought it would be a good idea to refresh my memory on JavaScript, HTML, and CSS.</li>
+                        <li><b>ITSC 2175 - Logic and Algorithms:</b> This was another course I was told will be very helpful for aspiring software engineers.</li>
+                    </ul>
+                </li>
+                <li><b>Funny/Interesting Item to Remember Me by:</b> I won a sparring tournament match against a 6’3 guy. I’m 5’1.</li>
+            </ul>
+        </section>
+    
+        <p class="quote">“Effort makes you. You will regret someday if you don’t do your best now.”</p>
+        <p class="quote">Jungkook</p>
     </main>
+
         <footer>
             <div data-include="components/footer.html"></div>
         </footer>
@@ -69,5 +79,5 @@
             document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
         </script>
         <script src="scripts/HTMLInclude.min.js"></script>
-    </body>
+  </body>
 </html>
