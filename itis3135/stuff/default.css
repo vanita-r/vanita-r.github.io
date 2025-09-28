@@ -1,0 +1,31 @@
+h3 {
+    font-family: Papyrus, fantasy;
+}
+.gojo {
+    font-family: "Comic Sans MS", cursive;
+}
+.times {
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: white;
+    margin: 20px 50px 75px 100px;
+}
+.bullet {
+    text-align: center;
+}
+.para {
+    font-size: x-large;
+    text-align: center;
+}
+.underlined {
+    text-decoration: underline;
+    background-color: yellow;
+    color: white;
+}
+.border {
+    border-top: 10px dotted red;
+    border-right: 5px double blue;
+    border-bottom: 15px dashed green;
+    border-left: 8px solid purple;
+}
