@@ -43,3 +43,21 @@ body {
     flex: 1;
     max-width: 600px;
 }
+
+a:visited {
+    color: #a6700b;
+}
+a:hover {
+    color: #1e5478;
+}
+a:link {
+    color: green;
+}
+a:active {
+    color: red;
+}
+
+.evaluations {
+    margin-right: 100px;
+    margin-left: 25px;
+}
