@@ -2,6 +2,7 @@ h1 {
     color: #6E4555;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.5em;
 }
 h2 {
     color: #3A3238;
@@ -11,39 +12,30 @@ nav {
 }
 body {
     background-color: #F5E3E0;
+    font-family: sans-serif;
+}
+main {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-
+/*Introduction page*/
 .quote {
     text-align: center;
     font-style: italic;
     margin-top: 20px;
 }
+
+.intro-container img {
+    border-radius: 8px;
+}
+
 .invisible {
     color: #F5E3E0;
 }
 
-.intro-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-}
-.intro-container figure {
-    max-width: 250px;
-    flex-shrink: 0;
-}
-.intro-container img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-.intro-container p, intro-container ul {
-    flex: 1;
-    max-width: 600px;
-}
-
+/*Links*/
 a:visited {
     color: #a6700b;
 }
@@ -57,7 +49,27 @@ a:active {
     color: red;
 }
 
+/*Website Evaluations Text Margins*/
 .evaluations {
     margin-right: 100px;
     margin-left: 25px;
+}
+
+/*Media Queries*/
+/*Tablet Screens*/
+@media screen and (max-width: 980px) {
+    main {
+        width: 95%;
+    }
+}
+
+/*Mobile Screens*/
+@media screen and (max-width: 600px) {
+    .evaluations {
+        margin: 20px;
+    }
+    nav a {
+        display: block;
+        padding: 10px;
+    }
 }
