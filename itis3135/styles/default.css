@@ -58,6 +58,19 @@ a:active {
     margin-left: 25px;
 }
 
+/*FCC FS JS*/
+table, th, td {
+    border: 1px solid black;
+}
+.section-1, .section-2 {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+.section-2 {
+    margin-bottom: 50px;
+}
+
 /*Media Queries*/
 /*Tablet Screens*/
 @media screen and (max-width: 980px) {
