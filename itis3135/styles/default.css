@@ -62,12 +62,12 @@ a:active {
 table, th, td {
     border: 1px solid black;
 }
-.section-1, .section-2 {
+.section-1, .section-2, .acknowledgement {
     max-width: 1200px;
     width: 90%;
     margin: 0 auto;
 }
-.section-2 {
+.section-2, .acknowledgement {
     margin-bottom: 50px;
 }
 
