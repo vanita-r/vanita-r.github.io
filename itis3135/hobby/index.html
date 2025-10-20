@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Martial Arts</title>
+      <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffe5e5;
+            color: #161A1D;
+        }
+        .title {
+            color: #A4161A;
+            text-align: center;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: xxx-large;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        nav a {
+            text-decoration: none;
+            margin: 0 5px;
+            font-weight: bold;
+        }
+        .active-link {
+            text-decoration: underline;
+            font-weight: 700;
+            color: #A4161A;
+        }
+
+        /* Unique Divider Symbol */
+        hr::after {
+            content: "🥋";
+            display: block;
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 10px 0;
+        }
+        hr {
+            border: none;
+        }
+
+        /* Sections hidden by default */
+        section {
+            display: none;
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Visible section */
+        .active {
+            display: block;
+        }
+
+        .subheading {
+            color: #BA181B; 
+        }
+        section p, ol, ul, form, figure {
+            color: #660708;
+        }
+        footer {
+            text-align: center;
+        }
+        
+        /*figure*/
+        figure img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        form input, form textarea, form button {
+            margin-top: 8px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #c0392b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #a93226;
+        }
+
+
+        /*Links*/
+        a:visited {
+            color: #BA181B;
+        }
+        a:hover {
+            color: #BA181B;
+        }
+        a:link {
+            color: #660708;
+        }
+        a:active {
+            color: #A4161A;
+        }
+      </style>
+      <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var sections = document.querySelectorAll("main section");
+          var links = document.querySelectorAll("nav a");
+      
+          function showSection(id) {
+            // Hide all sections
+            for (var i = 0; i < sections.length; i++) {
+              sections[i].classList.remove("active");
+            }
+      
+            // Remove active-link from all nav links
+            for (var j = 0; j < links.length; j++) {
+              links[j].classList.remove("active-link");
+            }
+      
+            // Show the requested section (if it exists); otherwise default to 'what'
+            var sectionToShow = document.getElementById(id);
+            if (!sectionToShow) {
+              sectionToShow = document.getElementById("what");
+              id = "what";
+            }
+            sectionToShow.classList.add("active");
+      
+            // Add active-link to the corresponding nav link
+            for (var k = 0; k < links.length; k++) {
+              var href = links[k].getAttribute("href");
+              if (href === "#" + id) {
+                links[k].classList.add("active-link");
+                break;
+              }
+            }
+      
+            // Update URL hash without scrolling (best-effort)
+            try {
+              if (history.replaceState) {
+                history.replaceState(null, null, "#" + id);
+              } else {
+                location.hash = "#" + id;
+              }
+            } catch (e) {
+              // ignore if environment blocks history.replaceState
+              location.hash = "#" + id;
+            }
+          }
+      
+          // Determine start section from URL hash (if present) else default to "what"
+          var start = "what";
+          if (location.hash && location.hash.length > 1) {
+            start = location.hash.substring(1);
+          }
+          showSection(start);
+      
+          // Wire up nav links
+          for (var m = 0; m < links.length; m++) {
+            links[m].addEventListener("click", function(e) {
+              e.preventDefault();
+              var targetId = this.getAttribute("href").substring(1);
+              showSection(targetId);
+            }, false);
+          }
+        });
+      </script>
+  </head>
+
+  <body> 
+    <header>
+        <h1 class="title">Martial Arts</h1>
+
+        <nav>
+            <a href="#what">What🤔 | </a>
+            <a href="#who">Who🤷‍♀️ | </a>
+            <a href="#when">When⏰ | </a>
+            <a href="#where">Where📍 | </a>
+            <a href="#how">How🕺 | </a>
+            <a href="#why">Why🥋 | </a>
+            <a href="#ai-prompts">AI Prompts🤖</a>
+        </nav>
+    </header>
+
+    <main>
+        <!--WHAT section-->
+        <section id="what">
+            <h2 class="subheading">What 🤔 – The Art of Martial Arts</h2>
+            <p>Martial arts is more than physical combat — it’s a discipline that strengthens the body, sharpens the mind, and shapes the spirit. It teaches focus, self-control, and respect for others.</p>
+            <p>From Karate to Taekwondo to Jiu-Jitsu, each style offers a unique approach to self-defense and personal growth. The beauty of martial arts lies in its adaptability — there’s something for every age and fitness level.</p>
+            <p>Whether practiced for fitness, self-defense, or inner peace, martial arts continues to unite people across cultures and generations.</p>
+
+            <figure>
+                <img src="images/martial-artist-kicking-high.png" alt="Martial Artist kicking during training">
+                <figcaption>Martial artist demonstrating a high kick during Taekwondo training.</figcaption>
+            </figure>
+
+            <p><em>AI prompt used: “A realistic photo of a martial artist performing a high kick in a modern dojo with natural lighting.”</em></p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <section id="who">
+            <h2 class="subheading">Who 🤷‍♀️ – About Me & Our Community</h2>
+            <p>Hello! My name is Vanita, and I’ve been passionate about martial arts for years. I started training to improve my confidence and fitness, and it quickly became a lifestyle.</p>
+            <p>Our community welcomes beginners and experts alike. We train together, grow together, and push each other to become stronger — both mentally and physically.</p>
+            <p>If you’re new to martial arts, don’t worry! Our instructors and peers are always ready to guide you every step of the way.</p>
+            
+            <figure>
+                <img src="images/groups-of-students-practicing-together.png" alt="Group martial arts class practicing together">
+                <figcaption>Our martial arts community training together in unity.</figcaption>
+            </figure>
+
+            <p><em>AI prompt used: “Group of diverse martial artists practicing together in a dojo, smiling and supporting each other.”</em></p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!--WHEN section-->
+        <section id="when">
+            <h2 class="subheading">When ⏰ – Best Times to Practice</h2>
+            <p>Martial arts can be practiced year-round, but early mornings and evenings are the best times for focused training. Cooler weather helps with endurance and flexibility.</p>
+            <p>Consistency is key — practicing at least 3 times per week can lead to noticeable improvements in form and stamina.</p>
+            <p>Below is a sample weekly schedule to help beginners balance rest and practice:</p>
+        
+            <table>
+                <tr><th>Day</th><th>Time</th><th>Focus</th></tr>
+                <tr><td>Monday</td><td>6:00–7:30 PM</td><td>Kicks & Footwork</td></tr>
+                <tr><td>Wednesday</td><td>6:00–7:30 PM</td><td>Forms & Technique</td></tr>
+                <tr><td>Friday</td><td>5:30–7:00 PM</td><td>Sparring & Conditioning</td></tr>
+            </table>
+
+            <figure>
+                <img src="images/students-training.png" alt="Dojo during evening class">
+                <figcaption>Evening martial arts training session at the dojo.</figcaption>
+            </figure>
+
+            <p><em>AI prompt used: “A warm-lit dojo during an evening martial arts class with students practicing forms.”</em></p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!--WHERE section-->
+        <section id="where">
+            <h2 class="subheading">Where📍 – Best Training Locations</h2>
+            <p>While professional dojos offer the best equipment and instruction, you can also train outdoors or at home with minimal gear.</p>
+            <p>Many parks, gyms, and recreation centers host open martial arts sessions for all levels. Online classes are also a great option for beginners.</p>
+            <p>Check local martial arts schools or fitness centers for introductory trials — many offer the first class free!</p>
+
+            <figure>
+                <img src="images/students-training-outside.png" alt="Outdoor martial arts practice in park">
+                <figcaption>Outdoor training provides space and a refreshing environment.</figcaption>
+            </figure>
+
+            <p><em>AI prompt used: “Martial artists training outdoors in a sunny park with grass and trees in the background.”</em></p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!--HOW section-->
+        <section id="how">
+            <h2 class="subheading">How 🕺 – Getting Started</h2>
+            <ol>
+                <li>Choose a martial art style that fits your goals — for example, Taekwondo for kicks, Judo for throws, or Karate for strikes.</li>
+                <li>Start slow. Focus on mastering the basics before moving on to advanced moves.</li>
+                <li>Combine your training with proper nutrition, rest, and stretching routines to prevent injury.</li>
+            </ol>
+
+            <form>
+                <label for="interest">Sign up for beginner updates:</label>
+                <input type="text" id="interest" name="interest" placeholder="Enter your email..." required />
+                <button type="submit">Join the Mailing List</button>
+            </form>
+
+            <figure>
+                <img src="images/student-and-instructor.png" alt="Beginner learning martial arts stance">
+                <figcaption>Practicing stances and forms is key for beginners.</figcaption>
+            </figure>
+
+            <p><em>AI prompt used: “Beginner martial artist learning a fighting stance under instructor guidance, bright dojo background.”</em></p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!--WHY section-->
+        <section id="why">
+            <h2 class="subheading">Why 🥋 – The Purpose Behind the Practice</h2>
+            <p>Martial arts teaches patience, humility, and perseverance. Each lesson goes beyond the mat and into everyday life.</p>
+            <p>Through discipline and respect, practitioners find peace, balance, and confidence that influence all aspects of their lives.</p>
+            <p>It’s not just about fighting — it’s about becoming the best version of yourself.</p>
+
+            <figure>
+                <img src="images/student-meditating.png" alt="Martial artist meditating">
+                <figcaption>Meditation and mindfulness are key to martial arts mastery.</figcaption>
+            </figure>
+
+            <p><em>AI prompt used: “Martial artist meditating in lotus position inside a quiet dojo with soft lighting.”</em></p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+
+        <hr>
+
+        <!--AI Prompts section-->
+        <section id="ai-prompts">
+            <h2 class="subheading">AI Prompts 🤖 - Prompts used to generate text</h2>
+            <p>Throughout this website, I have used AI for generating images and information for all of the sections.</p>
+            <p>For the images, I have included the prompts under each of the images.</p>
+            <p>As for the text underneath the sections, I have used this prompt: </p>
+            <ul>
+                <li><i>"help me create a martial arts hobby website where the sections include: "Who (About / About Me / Who We Are), What (Home page – loads first, explains the hobby), When (Best Times / Schedule / Seasons), Where (Best Locations / Places), How, Why." And for each section, they should: "Contain at least three items (e.g., paragraphs, figures, tables, forms, slideshow). Include at least one figure (image + caption + italicized paragraph explaining the AI prompt used).""</i></li>
+            </ul>
+
+            <figure>
+                <img src="images/ai-prompt-examples.png" alt="Part of the AI generated answer from the prompt.">
+                <figcaption>Here is a small portion of the code generated from the AI prompt given to ChatGPT.</figcaption>
+            </figure>
+
+            <p>From this prompt, I have copied and pasted the text (h2, paragraph elements, and figure elements) for each of the sections.</p>
+
+            <p>As for the JS/CSS script for the nav element, I have used this prompt to create the code for it:</p>
+            <ul>
+                <li><i>"Add links in the header/nav to switch between sections. Use CSS so only the selected section is visible at a time (like a single-page app). Use a unique divider symbol (emoji or special character) different from your other pages. The What (Home) section should be the default visible page. This is what i have so far (attached document)"</i></li>
+            </ul>
+
+            <figure>
+                <img src="images/JS-CSS-AI-generated-code.png" alt="ChatGPT generated code">
+                <figcaption>Here is what ChatGPT generated based on the AI Prompt.</figcaption>
+            </figure>
+
+            <p>I also provided ChatGPT with the previous code I previously had for the nav elements.</p>
+            <nav>
+                <a href="#what">What🤔 | </a>
+                <a href="#who">Who🤷‍♀️ | </a>
+                <a href="#when">When⏰ | </a>
+                <a href="#where">Where📍 | </a>
+                <a href="#how">How🕺 | </a>
+                <a href="#why">Why🥋 | </a>
+                <a href="#ai-prompts">AI Prompts🤖</a>
+            </nav>
+        </section>
+    </main>
+
+    <footer>
+        <p>Designed by <a href="vr-imagine.com/">Vengeful Rabbit </a>© 2025</p>
+
+        <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
+            <img style="border:0;width:88px;height:31px" src="https://mytienhoang.github.io/itis3135/z_archives/html_validation.png" alt="Valid HTML!">
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
+            <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
+        </a>
+               
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+    </footer>
+    <script>
+            document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+  </body>
+</html>
