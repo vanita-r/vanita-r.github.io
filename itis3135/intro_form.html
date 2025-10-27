@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vanita Mae Rabsatt's Vengeful Rabbit | ITIS 3135 | Introduction Form</title>
+      <link rel="stylesheet" href="styles/default.css">
+      <style>
+          .class {
+              position: relative;
+              background-color: #fff;
+              width: 10%;
+              height: 10px;
+          }
+      </style>
+      <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <div id="form-container">
+            <h2 id="form-heading2">Introduction Form</h2>
+            <h3 id="form-heading3">Please submit the form below.</h3>
+            <form id="intro-form">
+                <fieldset>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" value="Vanita Mae" placeholder="Your first name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" value="Rabsatt" placeholder="Your last name" required>
+
+                    <label for="ack-statement">Acknowledge Statement:</label>
+                    <textarea id="ack-statement" name="ack-statement" placeholder="Acknowledgement statement" required>I, Vanita Mae Rabsatt agree to abide by the terms of the course contract in my FALL 2025, ITIS3135, Front-End Web App Development with my instructor, Professor D.I. von Briesen. I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.</textarea>
+                
+                    <label for="ack-date">Acknowledgement Date:</label>
+                    <input type="text" id="ack-date" name="ack-date" value="Signed: Vanita Mae J. Rabsatt, 31/08/2025" placeholder="Acknowledgement date" required>
+                
+                    <label for="mascot-adj">Mascot Adjective:</label>
+                    <input type="text" id="mascot-adj" name="mascot-adj" value="Vengeful" placeholder="Mascot adjective (Ex: Vengeful)" required>
+
+                    <label for="mascot-animal">Mascot Animal:</label>
+                    <input type="text" id="mascot-animal" name="mascot-animal" value="Rabbit" placeholder="Mascot Animal (Ex: Rabbit)" required>
+
+                    <label for="divider">Divider:</label>
+                    <input type="text" id="divider" name="divider" value="|" placeholder="|, ~, etc." required>
+                
+                    <label for="introImage">Picture:</label>
+                    <input type="file" id="introImage" name="file">
+                    <button type="button" onclick="loadImage()">Load Image</button>
+                    <div id="loadImage">
+                        <img src="images/fasu-photshoot-selfie.jpg" alt="Vanita's selfie" style="max-width: 200px; display: block; margin-top: 10px;">
+                    </div>
+
+                    <label for="pic-caption">Picture Caption:</label>
+                    <input type="text" id="pic-caption" name="pic-caption" value="Selfie taken during my Filipino organization's photoshoot." placeholder="Caption for your picture" required>
+
+                    <label for="personal-stat">Personal Statement:</label>
+                    <textarea id="personal-stat" name="personal-stat" placeholder="Personal Statement" required>Hi, my name is Vanita and I am a junior majoring in computer science at UNC Charlotte. My concentration is web/app development & software engineering. I’m from Fort Mill, SC, but I was originally born near Detroit, MI.</textarea>
+                
+                    <fieldset>
+                        <legend>Main Bullets</legend>
+                        <label for="personal-bg">Personal Background:</label>
+                        <textarea id="personal-bg" name="personal-bg" placeholder="Personal background" required>In my free time, I enjoy spending time with friends, exploring the city, trying different cuisines, and practicing martial arts.</textarea>
+                    
+                        <label for="prof-bg">Professional Background:</label>
+                        <textarea id="prof-bg" name="prof-bg" placeholder="Professional background" required>My computer science background began in sixth grade, and I started out learning HTML and CSS. Since then, I’ve completed online courses and certificates as well as projects which include languages such as JavaScript, Java, and Python. So far, I have interned at a start-up company called Comet, a college task applications manager, as a student flight test intern from July 2022 to September 2022.</textarea>
+
+                        <label for="academic-bg">Academic Background:</label>
+                        <textarea id="academic-bg" name="academic-bg" placeholder="Academic background" required>I am a second-year student at UNC Charlotte, pursuing a major in computer science with a focus on software engineering & web/app development. In my junior and senior year of high school, I took dual enrollment courses at the University of South Carolina at Lancaster.</textarea>
+
+                        <label for="primary-cp">Primary Computer:</label>
+                        <input type="text" id="primary-cp" name="primary-cp" value="Apple, MacOS, MacBook Air Laptop, Dorm" placeholder="Primary computer" required>
+                    
+                        <!--Courses taking-->
+                        <fieldset id="courses-fieldset">
+                            <legend>Courses</legend>
+
+                            <!--Course 1-->
+                            <label for="department1">Department:</label>
+                            <input type="text" id="department1" name="department1" placeholder="ITSC" value="ITSC" required>
+
+                            <label for="number1">Number:</label>
+                            <input type="text" id="number1" name="number1" placeholder="3688" value="3688" required>
+
+                            <label for="name1">Name:</label>
+                            <input type="text" id="name1" name="name1" placeholder="Computers & Their Impact on Society" value="Computers & Their Impact on Society" required>
+
+                            <label for="reason1">Reason for taking course:</label>
+                            <input type="text" id="reason1" name="reason1" placeholder="Why are you taking this course?" value="This is a required course I have to take for my major." required>
+
+                            <!--Course 2-->
+                            <label for="department2">Department:</label>
+                            <input type="text" id="department2" name="department2" placeholder="ITSC" value="MATH" required>
+
+                            <label for="number2">Number:</label>
+                            <input type="text" id="number2" name="number2" placeholder="3688" value="1242" required>
+
+                            <label for="name2">Name:</label>
+                            <input type="text" id="name2" name="name2" placeholder="Computers & Their Impact on Society" value="Calculus II" required>
+
+                            <label for="reason2">Reason for taking course:</label>
+                            <input type="text" id="reason2" name="reason2" placeholder="Why are you taking this course?" value="This is a requirement for computer science majors." required>
+
+                            <!--Course 3-->
+                            <label for="department3">Department:</label>
+                            <input type="text" id="department3" name="department3" placeholder="ITSC" value="ITSC" required>
+
+                            <label for="number3">Number:</label>
+                            <input type="text" id="number3" name="number3" placeholder="3688" value="3146" required>
+
+                            <label for="name3">Name:</label>
+                            <input type="text" id="name3" name="name3" placeholder="Computers & Their Impact on Society" value="Intro Oper Syst & Networking" required>
+
+                            <label for="reason3">Reason for taking course:</label>
+                            <input type="text" id="reason3" name="reason3" placeholder="Why are you taking this course?" value="I was informed that this course will be very helpful if I would like to pursue a career in software engineering." required>
+
+                            <!--Course 4-->
+                            <label for="department4">Department:</label>
+                            <input type="text" id="department4" name="department4" placeholder="ITSC" value="ITIS" required>
+
+                            <label for="number4">Number:</label>
+                            <input type="text" id="number4" name="number4" placeholder="3688" value="3135" required>
+
+                            <label for="name4">Name:</label>
+                            <input type="text" id="name4" name="name4" placeholder="Computers & Their Impact on Society" value="Front-End Web App Development" required>
+
+                            <label for="reason4">Reason for taking course:</label>
+                            <input type="text" id="reason4" name="reason4" placeholder="Why are you taking this course?" value="I have completed a course similar to this online during the pandemic and I enjoyed it. I also thought it would be a good idea to refresh my memory on JavaScript, HTML, and CSS." required>
+                            
+                            <!--Course 5-->
+                            <label for="department5">Department:</label>
+                            <input type="text" id="department5" name="department5" placeholder="ITSC" value="ITSC" required>
+
+                            <label for="number5">Number:</label>
+                            <input type="text" id="number5" name="number5" placeholder="3688" value="2175" required>
+
+                            <label for="name5">Name:</label>
+                            <input type="text" id="name5" name="name5" placeholder="Computers & Their Impact on Society" value="Logic and Algorithms" required>
+
+                            <label for="reason5">Reason for taking course:</label>
+                            <input type="text" id="reason5" name="reason5" placeholder="Why are you taking this course?" value="This was another course I was told will be very helpful for aspiring software engineers." required>
+
+                        </fieldset>
+                        <button type="button" id="add-course-btn" class="buttons">Add Another Course</button>
+
+                        <label class="interesting" for="interesting">Funny/Interesting Item to Remember Me by:</label>
+                        <input type="text" id="interesting" name="interesting" value="I won a sparring tournament match against a 6’3 guy. I’m 5’1." placeholder="An interesting/funny fact to remember you by" required>
+                    
+                        <label for="quote">Quote:</label>
+                        <input type="text" id="quote" name="quote" value="Effort makes you. You will regret someday if you don’t do your best now." placeholder="Any quote you like" required>
+
+                        <label for="quote-author">Quote Author:</label>
+                        <input type="text" id="quote-author" name="quote-author" value="Jungkook" placeholder="Author of the quote" required>
+                    
+                    </fieldset>
+                    <fieldset class="last-fieldset">
+                        <legend>5 Links</legend>
+                        
+                        <label for="link1">Link:</label>
+                        <input type="text" id="link1" name="link1" value="https://webpages.charlotte.edu/vrabsatt/" placeholder="CLT Webpages link" required>
+                    
+                        <label for="link2">Link:</label>
+                        <input type="text" id="link2" name="link2" value="https://github.com/vanita-r" placeholder="Github link" required>
+                        
+                        <label for="link3">Link:</label>
+                        <input type="text" id="link3" name="link3" value="https://github.com/vanita-r/vanita-r.github.io" placeholder="GitHub Pages link" required>
+                
+                        <label for="link4">Link:</label>
+                        <input type="text" id="link4" name="link4" value="https://vanita-r.github.io/itis3135/" placeholder="GitHub.io link" required>
+                
+                        <label for="link5">Link:</label>
+                        <input type="text" id="link5" name="link5" value="https://www.linkedin.com/in/vanita-mae-rabsatt/" placeholder="LinkedIn link" required>
+                    </fieldset>
+                </fieldset>
+
+                <p id="form-error"></p>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button" id="clear-form">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div id="intro-results">
+
+        </div>
+
+        <a href="#" id="reset-page-link">Reset page? (Reset Form)</a>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/loadImage.js"></script>
+    <script>
+        /*Used Gemini here to help me fix the code for my clear button and to go with the textarea elements I have*/
+        window.onload = function() {
+            try {
+                document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+                document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+            } catch (e) {
+                console.error("Could not find validation links. Are they in your footer.html?", e);
+            }
+        
+            const clearButton = document.getElementById("clear-form");
+
+            if (clearButton) {
+                clearButton.addEventListener("click", function(event) {
+                    event.preventDefault(); 
+                    
+                    const allFormElements = document.querySelectorAll("#intro-form input, #intro-form textarea");
+
+                    Array.from(allFormElements).forEach((element) => {
+                        if (element.type !== 'submit' && element.type !== 'reset' && element.type !== 'button' && element.type !== 'file') {
+                            element.value = "";
+                        }
+                    });
+                    
+                    //Also remove courses when clearing
+                     const dynamicCourses = document.querySelectorAll(".dynamic-course-group");
+                     dynamicCourses.forEach((course) => course.remove());
+                });
+            } else {
+                console.error("Could not find the 'clear-form' button.");
+            }
+        };
+    </script>
+    <script src="scripts/introduction.js"></script>
+  </body>
+</html>

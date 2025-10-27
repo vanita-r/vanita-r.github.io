@@ -4,7 +4,7 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2.5em;
 }
-h2 {
+#form-heading2, #form-heading3 {
     color: #3A3238;
 }
 nav {
@@ -70,6 +70,96 @@ table, th, td {
 .section-2, .acknowledgement {
     margin-bottom: 50px;
 }
+
+/*Introduction Form*/
+label, input {
+    display: block;
+    padding: 5px;
+}
+legend {
+    font-weight: bold;
+    color: #3A3238;
+}
+#ack-statement {
+    width: 100%;
+    height: 200px;
+}
+#ack-date, #pic-caption, #primary-cp, #interesting, #department1, #department2, #department3, #department4, #department5, #number1, #number2, #number3, #number4, #number5, #name1, #name2, #name3, #name4, #name5, #reason1, #reason2, #reason3, #reason4, #reason5, #quote, #link1, #link2, #link3, #link4, #link5 {
+    width: 100%;
+}
+#personal-stat {
+    width: 100%;
+    height: 50px;
+}
+#personal-bg, #prof-bg, #academic-bg {
+    width: 100%;
+    height: 100px;
+}
+#personal-stat, #primary-cp, #reason1, #reason2, #reason3, #reason4, .buttons {
+    margin-bottom: 30px;
+}
+.interesting, .last-fieldset {
+    margin-top: 20px;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+#form-error {
+    color: #D8000C; /* Red */
+    background-color: #FFD2D2;
+    border: 1px solid #D8000C;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    display: none; /* Hidden by default */
+    margin-bottom: 1rem;
+  }
+
+  .dynamic-course-group {
+    border: 1px dashed #aaa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+    position: relative;
+  }
+
+  .remove-course-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #eee;
+    color: #888;
+    cursor: pointer;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  #intro-results {
+    background-color: #F5E3E0;
+    padding: 2rem;
+    margin-top: 2rem;
+    display: none; 
+  }
+
+  #intro-results img {
+    max-width: 300px;
+    border-radius: 8px;
+    display: block;
+    margin: 1rem 0;
+  }
+
+  #reset-page-link {
+    display: none; 
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
 
 /*Media Queries*/
 /*Tablet Screens*/
