@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Vanita Mae Rabsatt's Vengeful Rabbit | ITIS 3135 | Introduction Form</title>
       <link rel="stylesheet" href="styles/default.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
       <style>
           .class {
               position: relative;
@@ -16,14 +17,16 @@
       <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
   </head>
   <body> 
+    <script src="generate_json.js"></script>
     <header>
         <div data-include="components/header.html"></div>
     </header>
 
     <main>
+        <h2 id="form-heading2">Introduction Form</h2>
+        <h3 id="form-heading3">Please submit the form below.</h3>
+
         <div id="form-container">
-            <h2 id="form-heading2">Introduction Form</h2>
-            <h3 id="form-heading3">Please submit the form below.</h3>
             <form id="intro-form">
                 <fieldset>
                     <label for="first-name">First Name:</label>
@@ -182,6 +185,7 @@
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
                     <button type="button" id="clear-form">Clear</button>
+                    <button type="button" id="generate_json">Generate JSON</button>
                 </div>
             </form>
         </div>
@@ -195,6 +199,7 @@
     <footer>
         <div data-include="components/footer.html"></div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
     <script src="scripts/loadImage.js"></script>
     <script>
