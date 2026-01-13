@@ -1,3 +1,3 @@
 # vanita_r.github.io
 
-This is Vanita, and I set up this site for my web class at UNC Charlotte.
+I'm (your name) and this is the root of my website
