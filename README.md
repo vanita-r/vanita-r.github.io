@@ -1,3 +1,3 @@
 # vanita_r.github.io
 
-I'm (your name) and this is the root of my website
+I'm Vanita and this is the root of my website.
