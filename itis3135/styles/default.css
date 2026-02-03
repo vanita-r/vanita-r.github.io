@@ -21,18 +21,18 @@ nav {
     text-align: center;
 }
 
-.main_nav {
+.main-nav {
     color: #ff7f7f;
 }
 
-.main_nav a {
+.main-nav a {
     /*margin: 0 15px;*/
     text-decoration: none;
     color: #ff7f7f;
     font-weight: bold;
 }
 
-.main_nav a:hover {
+.main-nav a:hover {
     color: #c08081;
     text-decoration: underline;
 }
@@ -41,7 +41,7 @@ footer {
     text-align: center;
 }
 
-.footer_links {
+.footer-links {
     text-align: center;
     color: #f08080;
 }
@@ -80,12 +80,12 @@ hr {
 }
 
 /*Introduction*/
-.intro_photo {
+.intro-photo {
     text-align: center;
     margin: 20px 0;
 }
 
-.intro_photo img {
+.intro-photo img {
     border: 5px solid #C58882;
     border-radius: 10px;
 }
