@@ -1,16 +1,35 @@
+/* General Styles */
 h1 {
     text-align: center;
     color: #C58882;
     text-shadow: 1px 1px 1px #C58882;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
     color: #DF928E;
     text-shadow: 0px 1px 1px #C58882;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h3 {
+    color: #E6A19D;
+    text-shadow: 2px 1px 0px #b87d78;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
     text-align: center;
+}
+
+#main_nav a {
+    /*margin: 0 15px;*/
+    text-decoration: none;
+    color: #ff7f7f;
+    font-weight: bold;
+}
+
+#main_nav a:hover {
+    color: #c08081;
+    text-decoration: underline;
 }
 
 footer {
@@ -20,8 +39,99 @@ footer {
 body {
     background-color: #D1DEDE;
     color: #1d201f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* Personal Site Home */
+#personal_site_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    background-color: #faedec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Home*/
+#home_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    background-color: #faedec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Introduction*/
+#intro_photo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#intro_photo img {
+    border: 5px solid #C58882;
+    border-radius: 10px;
+}
+
+#introduction_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    background-color: #faedec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#introduction_main blockquote {
+    color: #363636;
+    border-left: 4px solid #C58882;
+    margin: 20px;
+    margin-left: 50px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+/*Contract*/
+#contract_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    background-color: #faedec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Website Evaluations*/
 .evaluations li {
     margin-bottom: 10px;
+}
+
+#website_evaluations_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    background-color: #faedec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.evaluations a {
+    color: #E6A19D;
+    text-shadow: 2px 1px 0px #b87d78;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.evaluations a:hover {
+    text-decoration: underline;
+}
+
+/*FCC RWD Certification Pages*/
+#fcc_rwd_main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 20px 10px 20px;
+    background-color: #faedec;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
