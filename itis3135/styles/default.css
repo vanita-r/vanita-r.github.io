@@ -1,5 +1,12 @@
 h1 {
     text-align: center;
+    color: #C58882;
+    text-shadow: 1px 1px 1px #C58882;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+h2 {
+    color: #DF928E;
+    text-shadow: 0px 1px 1px #C58882;
 }
 
 nav {
@@ -8,6 +15,11 @@ nav {
 
 footer {
     text-align: center;
+}
+
+body {
+    background-color: #D1DEDE;
+    color: #1d201f;
 }
 
 .evaluations li {
