@@ -2,18 +2,20 @@
 /* color palette: https://coolors.co/ead2ac-df928e-c58882-d1dede-1d201f*/
 h1 {
     text-align: center;
-    color: #C58882;
-    text-shadow: 1px 1px 1px #C58882;
+    color: #73413C;
+    text-shadow: 2px 1px 2px #C58882;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h2 {
-    color: #d08784;
+    color: #A24F4E;
     text-shadow: 0px 1px 1px #C58882;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 h3 {
-    color: #E6A19D;
-    text-shadow: 2px 1px 0px #a8736e;
+    color: #A24F4E;
+    text-shadow: 2px 1px 0px #f6a8a1;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -58,7 +60,7 @@ footer a:hover {
 }
 
 body {
-    background-color: #D1DEDE;
+    background-color: #fff7ee;
     color: #1d201f;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -76,7 +78,7 @@ hr {
     padding: 0px 20px 10px 20px;
     background-color: #faedec;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /*Introduction*/
@@ -105,8 +107,8 @@ hr {
 }
 
 .evaluations a {
-    color: #E6A19D;
-    text-shadow: 2px 1px 0px #b87d78;
+    color: #A24F4E;
+    text-shadow: 2px 1px 0px #f6a8a1;
     font-weight: bold;
     text-decoration: none;
 }
