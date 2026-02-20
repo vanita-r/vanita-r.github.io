@@ -24,17 +24,17 @@ nav {
 }
 
 .main-nav {
-    color: #f08080;
+    color: #A24F4E;
 }
 
 .main-nav a {
     text-decoration: none;
-    color: #A24F4E;
+    color: #c86260;
     font-weight: bold;
 }
 
 .main-nav a:hover {
-    color: #73413C;
+    color: #A24F4E;
     text-decoration: underline;
 }
 
@@ -44,12 +44,12 @@ footer {
 
 .footer-links {
     text-align: center;
-    color: #f08080;
+    color: #A24F4E;
 }
 
 footer a {
     text-decoration: none;
-    color: #f08080;
+    color: #c86260;
     font-weight: bold;
 }
 
