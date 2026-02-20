@@ -24,18 +24,17 @@ nav {
 }
 
 .main-nav {
-    color: #ff7f7f;
+    color: #f08080;
 }
 
 .main-nav a {
-    /*margin: 0 15px;*/
     text-decoration: none;
-    color: #ff7f7f;
+    color: #A24F4E;
     font-weight: bold;
 }
 
 .main-nav a:hover {
-    color: #c08081;
+    color: #73413C;
     text-decoration: underline;
 }
 
@@ -55,7 +54,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #c08081;
+    color: #A24F4E;
     text-decoration: underline;
 }
 
