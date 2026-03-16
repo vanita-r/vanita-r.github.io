@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martial Arts - Vanita Mae Rabsatt</title>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --crushed-berry: #880d1eff;
+            --raspberry: #dd2d4aff;
+            --bubblegum-pink: #f26a8dff;
+            --pink-mist: #f49cbbff;
+            --light-cyan: #cbeef3ff;
+        }
+
+        body {
+            background-color: var(--light-cyan);
+            color: var(--crushed-berry);
+            margin: 0 auto;
+            max-width: 800px;
+            font-family: "Noto Sans", sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: "Rubik Glitch", system-ui;
+            color: var(--crushed-berry);
+            margin-top: 30px;
+        }
+
+        h2 {
+            text-align: left;
+            color: var(--raspberry);
+            border-bottom: 2px solid var(--crushed-berry);
+            padding-bottom: 5px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        nav li {
+            display: inline;
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--raspberry);
+            transition: color 0.3s;
+        }
+
+        nav li:hover {
+            color: var(--crushed-berry);
+        }
+
+        nav li:not(:last-child)::after {
+            content: " 🥋 ";
+            margin: 0 10px;
+            color: var(--crushed-berry);
+            cursor: default;
+        }
+
+        main section {
+            display: none;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        main section.active {
+            display: block;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid var(--pink-mist);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--crushed-berry);
+            color: white;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px auto;
+        }
+
+        figure {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid var(--bubblegum-pink);
+            background: #fffafa;
+        }
+
+        figcaption {
+            text-align: center;
+            font-weight: bold;
+            color: var(--crushed-berry);
+        }
+
+        .ai-explanation {
+            font-style: italic;
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8em;
+            margin: 40px 0;
+            color: var(--crushed-berry);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Martial Arts Hobby Site</h1>
+        <nav>
+            <ul>
+                <li onclick="showSection('what')">What</li>
+                <li onclick="showSection('who')">Who</li>
+                <li onclick="showSection('when')">When</li>
+                <li onclick="showSection('where')">Where</li>
+                <li onclick="showSection('how')">How</li>
+                <li onclick="showSection('why')">Why</li>
+                <li onclick="showSection('ai')">AI Prompts</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what" class="active">
+            <h2>What is Martial Arts?</h2>
+            <p>Martial arts are codified systems and traditions of combat practiced for various reasons such as self-defense, competition, and mental development. From the striking of Muay Thai to the grappling of Brazilian Jiu-Jitsu, it is a diverse world of discipline.</p>
+            <ul>
+                <li>Striking: Focuses on punches and kicks.</li>
+                <li>Grappling: Focuses on throws and ground control.</li>
+                <li>Weaponry: Focuses on traditional tools like the bo staff.</li>
+            </ul>
+            <figure>
+                <img src="images/frayed_black_belt.png" alt="Close up of a black belt">
+                <figcaption>The Symbol of Discipline.</figcaption>
+                <p class="ai-explanation">AI Prompt: A high-detail photorealistic close-up of a frayed, old martial arts black belt neatly folded on a dark, polished mahogany dojo floor, cinematic lighting, 8k resolution.</p>
+            </figure>
+        </section>
+
+        <section id="who">
+            <h2>Who Can Practice?</h2>
+            <p>Martial arts is truly for everyone. Whether you are a five-year-old learning focus or a sixty-year-old staying mobile, the "Who" of martial arts is defined by a desire to improve rather than existing athletic ability.</p>
+            <blockquote>"The ultimate aim of martial arts lies not in victory or defeat, but in the perfection of the character."</blockquote>
+            <figure>
+                <img src="images/sensei_and_student.png" alt="Sensei bowing to student">
+                <figcaption>Respect Across Generations.</figcaption>
+                <p class="ai-explanation">AI Prompt: Photorealistic shot of an elderly Asian sensei and a young 7-year-old student in white kimonos bowing to each other in a bright, sunlit modern dojo.</p>
+            </figure>
+        </section>
+
+        <section id="when">
+            <h2>When to Train?</h2>
+            <p>The best time to start is today. Consistency is more important than the specific hour you train. Most schools offer flexible schedules to accommodate busy lives.</p>
+            <table>
+                <tr><th>Session</th><th>Benefit</th></tr>
+                <tr><td>Morning</td><td>Increased Metabolism</td></tr>
+                <tr><td>Evening</td><td>Stress Relief</td></tr>
+                <tr><td>Weekend</td><td>Technical Deep Dives</td></tr>
+            </table>
+            <figure>
+                <img src="images/training_time.png" alt="Clock in a gym">
+                <figcaption>The Hour of Training.</figcaption>
+                <p class="ai-explanation">AI Prompt: A cinematic photorealistic shot of a large digital wall clock showing 6:00 PM in a gritty, industrial-style MMA gym, blurred figures of people training.</p>
+            </figure>
+        </section>
+
+        <section id="where">
+            <h2>Where to Train?</h2>
+            <p>Training environments vary from traditional Japanese Dojos to modern "Globo-gyms." The environment often dictates the atmosphere—some prefer ritual, while others prefer raw intensity.</p>
+            <ol>
+                <li>Find a local school.</li>
+                <li>Check for cleanliness and safety.</li>
+                <li>Meet the instructors.</li>
+            </ol>
+            <figure>
+                <img src="images/dojo_in_forest.png" alt="Dojo in the woods">
+                <figcaption>The Traditional Dojo.</figcaption>
+                <p class="ai-explanation">AI Prompt: A wide photorealistic landscape shot of a traditional Japanese wooden dojo with sliding paper doors, located in a misty bamboo forest at dawn.</p>
+            </figure>
+        </section>
+
+        <section id="how">
+            <h2>How to Begin?</h2>
+            <p>Starting is as simple as showing up. Most gyms allow you to take a trial class in comfortable athletic wear before committing to a uniform (Gi).</p>
+            <p>Make sure to bring a water bottle and a positive attitude. The "white belt" mindset—being open to mistakes—is your greatest tool for growth.</p>
+            <figure>
+                <img src="images/sparring_gloves.png" alt="Boxing gloves on a bench">
+                <figcaption>The Starter Kit.</figcaption>
+                <p class="ai-explanation">AI Prompt: Photorealistic still life of a pair of leather boxing gloves, a stainless steel water bottle, and a hand towel on a locker room bench, cinematic lighting.</p>
+            </figure>
+        </section>
+
+        <section id="why">
+            <h2>Why Martial Arts?</h2>
+            <p>Beyond the ability to defend oneself, martial arts fosters an "indomitable spirit." It reduces stress through physical exertion and builds incredible functional strength.</p>
+            <ul>
+                <li>Builds Confidence</li>
+                <li>Improves Flexibility</li>
+                <li>Cultivates Discipline</li>
+            </ul>
+            <figure>
+                <img src="images/black_belt_kick.png" alt="Kick at sunset">
+                <figcaption>The Mental Peak.</figcaption>
+                <p class="ai-explanation">AI Prompt: A photorealistic wide shot of a person in a black martial arts uniform performing a side kick on a mountain peak during a vibrant orange sunset.</p>
+            </figure>
+        </section>
+
+        <section id="ai">
+            <h2>AI Prompts</h2>
+            <article>
+                <h3>Generating Martial Arts content</h3>
+                <p>Prompt:</p>
+                <img src="images/prompt1-3.png" alt="Prompt for Martial Arts content (prompt 1)">
+                <p>Result:</p>
+                <img src="images/prompt1-1.png" alt="Result of Prompt 1">
+                <img src="images/prompt1-2.png" alt="Result of Prompt 1">
+            </article>
+
+            <article>
+                <h3>Generating the images</h3>
+                <p>I just used the prompts listed in the results from the 1st prompt to create the images in Gemini.</p>
+            </article>
+
+            <article>
+                <h3>Fixing my JavaScript code</h3>
+                <p>Prompt:</p>
+                <img src="images/prompt2-1.png" alt="Prompt for JavaScript code (prompt 2)">
+                <p>Result:</p>
+                <img src="images/prompt2-2.png" alt="Result of Prompt 2">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Page built by &copy; 2026 <a href="https://vanita-r.github.io/" target="_blank">Vanita Mae Rabsatt</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach((section) => {
+                section.classList.remove('active');
+            });
+            const target = document.getElementById(sectionId);
+            if (target) {
+                target.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
