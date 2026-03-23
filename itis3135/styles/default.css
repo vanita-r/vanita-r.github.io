@@ -58,6 +58,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
+#design-firm {
+    color: black;
+}
+
 body {
     background-color: #fff7ee;
     color: #1d201f;
@@ -121,12 +125,7 @@ hr {
     text-align: center;
 }
 
-/* ============================================ */
-/* Form Styles - Introduction Form Only */
-/* ============================================ */
-
 /* Form Container */
-
 #intro-form {
     background-color: #fff7ee;
     border-radius: 8px;
