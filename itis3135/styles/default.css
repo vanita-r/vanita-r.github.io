@@ -120,3 +120,286 @@ hr {
 .fcc-nav {
     text-align: center;
 }
+
+/* ============================================ */
+/* Form Styles - Introduction Form Only */
+/* ============================================ */
+
+/* Form Container */
+
+#intro-form {
+    background-color: #fff7ee;
+    border-radius: 8px;
+    padding: 20px;
+    border: 1px solid #C58882;
+}
+
+/* Fieldset Styling */
+#intro-form fieldset {
+    border: 1px solid #DF928E;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#intro-form legend {
+    color: #73413C;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+
+/* Form Labels */
+#intro-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #73413C;
+    font-weight: 500;
+}
+
+/* Input Fields */
+#intro-form input[type="text"],
+#intro-form input[type="file"],
+#intro-form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #DF928E;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+#intro-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+/* Focus States */
+#intro-form input:focus,
+#intro-form textarea:focus {
+    outline: none;
+    border-color: #C58882;
+    box-shadow: 0 0 3px rgba(197, 136, 130, 0.3);
+}
+
+/* Image Preview Section */
+#loadImage {
+    margin: 10px 0 15px 0;
+}
+
+#loadImage img {
+    max-width: 200px;
+    border-radius: 4px;
+    border: 2px solid #C58882;
+    padding: 3px;
+}
+
+/* Button Group */
+#intro-form .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#intro-form .buttons button {
+    padding: 10px 20px;
+    background-color: #A24F4E;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: background-color 0.3s;
+}
+
+#intro-form .buttons button:hover {
+    background-color: #C58882;
+}
+
+#intro-form .buttons button[type="reset"] {
+    background-color: #DF928E;
+}
+
+#intro-form .buttons button[type="reset"]:hover {
+    background-color: #C58882;
+}
+
+#intro-form .buttons button[type="button"] {
+    background-color: #73413C;
+}
+
+#intro-form .buttons button[type="button"]:hover {
+    background-color: #A24F4E;
+}
+
+/* Dynamic Course Groups */
+.dynamic-course-group {
+    border: 1px solid #DF928E;
+    border-radius: 6px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #fff7ee;
+}
+
+.dynamic-course-group label {
+    margin-top: 10px;
+}
+
+.remove-course-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #DF928E;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.remove-course-btn:hover {
+    background-color: #C58882;
+}
+
+/* Add Course Button */
+#add-course-btn {
+    margin-top: 10px;
+    background-color: #73413C;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+#add-course-btn:hover {
+    background-color: #A24F4E;
+}
+
+/* Nested Fieldset */
+#intro-form fieldset fieldset {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-color: #DF928E;
+}
+
+#intro-form fieldset fieldset legend {
+    color: #A24F4E;
+    font-size: 0.95em;
+}
+
+/* Error Message */
+#form-error {
+    color: #A24F4E;
+    background-color: #faedec;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px 0;
+    border-left: 3px solid #DF928E;
+    display: none;
+}
+
+/* Results Container */
+#intro-results {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #faedec;
+    border-radius: 8px;
+    border: 1px solid #C58882;
+    display: none;
+}
+
+#intro-results figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#intro-results img {
+    max-width: 100%;
+    border-radius: 8px;
+    border: 5px solid #C58882;
+}
+
+#intro-results .quote {
+    color: #73413C;
+    font-style: italic;
+    border-left: 3px solid #DF928E;
+    padding-left: 15px;
+    margin: 20px 0;
+}
+
+/* Center the links container */
+#intro-results p:last-of-type {
+    text-align: center;
+    color: #A24F4E;
+    margin: 20px 0;
+}
+
+/* Style the links to match your color scheme */
+#intro-results p:last-of-type a {
+    color: #A24F4E;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+#intro-results p:last-of-type a:hover {
+    color: #C58882;
+    text-decoration: underline;
+}
+
+/* Reset Page Link */
+#reset-page-link {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    color: #A24F4E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#reset-page-link:hover {
+    color: #C58882;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #form-container {
+        padding: 0 10px;
+    }
+    
+    #intro-form {
+        padding: 15px;
+    }
+    
+    #intro-form .buttons {
+        flex-direction: column;
+    }
+    
+    #intro-form .buttons button {
+        width: 100%;
+    }
+    
+    .dynamic-course-group {
+        padding: 10px;
+    }
+}

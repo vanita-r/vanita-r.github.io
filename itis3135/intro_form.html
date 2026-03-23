@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Vanita Mae Rabsatt's Vengeful Rabbit ~ ITIS 3135 ~ Introduction Form</title>
+      <link rel="stylesheet" href="styles/default.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+      <style>
+          .class {
+              position: relative;
+              background-color: #fff;
+              width: 10%;
+              height: 10px;
+          }
+      </style>
+      <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <header>
+        <div data-include="components/header.html"></div>
+        <script src="projects/HTMLInclude-master/HTMLInclude.min.js"></script>
+    </header>
+
+    <main>
+        <h2 id="form-heading2">Introduction Form</h2>
+        <h3 id="form-heading3">Please submit the form below.</h3>
+
+        <div id="form-container">
+            <form id="intro-form">
+                <fieldset>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" value="Vanita Mae" placeholder="Your first name" required>
+
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" value="Rabsatt" placeholder="Your last name" required>
+
+                    <label for="middle-name">Middle Name:</label>
+                    <input type="text" id="middle-name" name="middle-name" value="J." placeholder="Your middle name" required>
+
+                    <label for="ack-statement">Acknowledge Statement:</label>
+                    <textarea id="ack-statement" name="ack-statement" placeholder="Acknowledgement statement" cols="40" rows="10" required>I, Vanita Mae Rabsatt agree to abide by the terms of the course contract in my FALL 2025, ITIS3135, Front-End Web App Development with my instructor, Professor D.I. von Briesen. I understand that all work that I do on publicly available online tools will be available to the world, and will not put information there that is inappropriate for schoolwork, or that I wish to keep private. I also understand that it is my work that counts for attendance, not logins or showing up for class. As such, failure to turn in assignments may show as absences. I also understand that given the structure and content of this class it’s possible to find many examples online or even view my classmates’ code directly. I swear that I will only use these resources to learn, and will not cut and paste code except where I have properly given credit (i.e. external libraries) and never from my classmates.</textarea>
+                
+                    <label for="ack-date">Acknowledgement Date:</label>
+                    <input type="text" id="ack-date" name="ack-date" value="Signed: Vanita Mae J. Rabsatt, 31/08/2025" placeholder="Acknowledgement date" required>
+                
+                    <label for="mascot-adj">Mascot Adjective:</label>
+                    <input type="text" id="mascot-adj" name="mascot-adj" value="Vengeful" placeholder="Mascot adjective (Ex: Vengeful)" required>
+
+                    <label for="mascot-animal">Mascot Animal:</label>
+                    <input type="text" id="mascot-animal" name="mascot-animal" value="Rabbit" placeholder="Mascot Animal (Ex: Rabbit)" required>
+
+                    <label for="divider">Divider:</label>
+                    <input type="text" id="divider" name="divider" value="~" placeholder="|, ~, etc." required>
+                
+                    <label for="introImage">Picture:</label>
+                    <input type="file" id="introImage" name="file">
+                    <button type="button" onclick="loadImage()">Load Image</button>
+                    <div id="loadImage">
+                        <img src="images/IMG_4765.jpg" alt="A photo of me standing in front the Charlotte city skyline." style="max-width: 200px; display: block; margin-top: 10px;">
+                    </div>
+
+                    <label for="pic-caption">Picture Caption:</label>
+                    <input type="text" id="pic-caption" name="pic-caption" value="Me at my organization's photoshoot location in uptown last year." placeholder="Caption for your picture" required>
+
+                    <label for="personal-stat">Personal Statement:</label>
+                    <textarea id="personal-stat" name="personal-stat" placeholder="Personal Statement" cols="40" rows="5" required>I’m a junior at UNC Charlotte studying Computer Science with a focus in Software Engineering & Web/App Development. I am eager to further develop my skills and knowledge in front-end development this semester.</textarea>
+                
+                    <fieldset>
+                        <legend>Main Bullets</legend>
+                        <label for="personal-bg">Personal Background:</label>
+                        <textarea id="personal-bg" name="personal-bg" placeholder="Personal background" cols="40" rows="5" required>I’ve lived in the Carolinas for most of my life, but I was originally born in Michigan. In my free time, I enjoy spending time with friends, exploring the city, trying different cuisines, and practicing martial arts.</textarea>
+                    
+                        <label for="prof-bg">Professional Background:</label>
+                        <textarea id="prof-bg" name="prof-bg" placeholder="Professional background" cols="40" rows="5" required>Throughout my time here at UNC Charlotte, I’ve worked on several projects–both course-based and personal–involving programming languages such as Java, Python, JavaScript, and HTML. I am hoping to obtain a front-end software engineering internship/position by the time I graduate.</textarea>
+
+                        <label for="academic-bg">Academic Background:</label>
+                        <textarea id="academic-bg" name="academic-bg" placeholder="Academic background" cols="40" rows="5" required>I’m currently a junior studying Computer Science with a concentration in Software Engineering & Web/App Development. Before coming here to UNC Charlotte, I attended a high school in Indian Land, South Carolina.</textarea>
+
+                        <label for="background-bg">Background in this Subject:</label>
+                        <textarea id="background-bg" name="background-bg" placeholder="Background in this subject" cols="40" rows="5" required>In 2020, during the pandemic, I participated in an online coding academy where I focused on working on front-end web development and completed multiple projects involving HTML, CSS, and JavaScript.</textarea>
+
+                        <label for="primary-cp">Primary Work Computer:</label>
+                        <textarea id="primary-cp" name="primary-cp" placeholder="Primary computer" cols="40" rows="5" required>The laptop I primarily use for university assignments is a MacBook Air M3 14-inch. I also have a Microsoft Surface Pro 7+ laptop.</textarea>
+                    
+                        <!--Courses taking-->
+                        <fieldset id="courses-fieldset">
+                            <legend>Courses</legend>
+
+                            <!--Course 1-->
+                            <label for="department1">Department:</label>
+                            <input type="text" id="department1" name="department1" placeholder="MATH" value="MATH" required>
+
+                            <label for="number1">Number:</label>
+                            <input type="text" id="number1" name="number1" placeholder="1242" value="1242" required>
+
+                            <label for="name1">Name:</label>
+                            <input type="text" id="name1" name="name1" placeholder="Calculus II" value="Calculus II" required>
+
+                            <label for="reason1">Reason for taking course:</label>
+                            <input type="text" id="reason1" name="reason1" placeholder="Why are you taking this course?" value="It's a required class." required>
+
+                            <!--Course 2-->
+                            <label for="department2">Department:</label>
+                            <input type="text" id="department2" name="department2" placeholder="ITIS" value="ITIS" required>
+
+                            <label for="number2">Number:</label>
+                            <input type="text" id="number2" name="number2" placeholder="3135" value="3135" required>
+
+                            <label for="name2">Name:</label>
+                            <input type="text" id="name2" name="name2" placeholder="Front-end Web Application Development" value="Front-end Web Application Development" required>
+
+                            <label for="reason2">Reason for taking course:</label>
+                            <input type="text" id="reason2" name="reason2" placeholder="Why are you taking this course?" value="A required class, but it’s also an interesting one since it’s an area of software engineering that I would like to go into." required>
+
+                            <!--Course 3-->
+                            <label for="department3">Department:</label>
+                            <input type="text" id="department3" name="department3" placeholder="ITSC" value="ITSC" required>
+
+                            <label for="number3">Number:</label>
+                            <input type="text" id="number3" name="number3" placeholder="3155" value="3155" required>
+
+                            <label for="name3">Name:</label>
+                            <input type="text" id="name3" name="name3" placeholder="Software Engineering" value="Software Engineering" required>
+
+                            <label for="reason3">Reason for taking course:</label>
+                            <input type="text" id="reason3" name="reason3" placeholder="Why are you taking this course?" value="An interesting class since it relates to the job I would like to obtain one day." required>
+
+                            <!--Course 4-->
+                            <label for="department4">Department:</label>
+                            <input type="text" id="department4" name="department4" placeholder="ITCS" value="ITCS" required>
+
+                            <label for="number4">Number:</label>
+                            <input type="text" id="number4" name="number4" placeholder="3050" value="3050" required>
+
+                            <label for="name4">Name:</label>
+                            <input type="text" id="name4" name="name4" placeholder="Technical Interview Prep 101" value="Technical Interview Prep 101" required>
+
+                            <label for="reason4">Reason for taking course:</label>
+                            <input type="text" id="reason4" name="reason4" placeholder="Why are you taking this course?" value="Another interesting class since it’s something I believe would help me become successful in future interviews." required>
+
+                        </fieldset>
+                        <button type="button" id="add-course-btn" class="buttons">Add Another Course</button>
+
+                        <label class="interesting" for="interesting">Funny/Interesting item to remember me by:</label>
+                        <input type="text" id="interesting" name="interesting" value="I'm a 2nd-degree black belt in American Freestyle Karate." placeholder="An interesting/funny fact to remember you by" required>
+                    
+                        <label class="share" for="share">I'd also like to share:</label>
+                        <input type="text" id="share" name="share" value="I was born near Detroit." placeholder="Another thing you'd like to share" required>
+
+                        <label for="quote">Quote:</label>
+                        <input type="text" id="quote" name="quote" value="I feel like the possibility of all those possibilities being possible is just another possibility that can possibly happen." placeholder="Any quote you like" required>
+
+                        <label for="quote-author">Quote Author:</label>
+                        <input type="text" id="quote-author" name="quote-author" value="Mark Lee" placeholder="Author of the quote" required>
+                    
+                    </fieldset>
+                    <fieldset class="last-fieldset">
+                        <legend>5 Links</legend>
+                        
+                        <label for="link1">Link:</label>
+                        <input type="text" id="link1" name="link1" value="https://vanita-r.github.io/itis3135/index.html" placeholder="ITIS3135 link" required>
+                    
+                        <label for="link2">Link:</label>
+                        <input type="text" id="link2" name="link2" value="https://github.com/vanita-r" placeholder="Github link" required>
+                        
+                        <label for="link3">Link:</label>
+                        <input type="text" id="link3" name="link3" value="https://webpages.charlotte.edu/vrabsatt/" placeholder="CLT Webpages link" required>
+                
+                        <label for="link4">Link:</label>
+                        <input type="text" id="link4" name="link4" value="https://vanita-r.github.io/" placeholder="GitHub.io link" required>
+                
+                        <label for="link5">Link:</label>
+                        <input type="text" id="link5" name="link5" value="https://www.linkedin.com/in/vanita-mae-rabsatt/" placeholder="LinkedIn link" required>
+                    </fieldset>
+                </fieldset>
+
+                <p id="form-error"></p>
+
+                <div class="buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset" id="reset-btn">Reset</button>
+                    <button type="button" id="clear-btn">Clear</button>
+                    <button type="button" id="generate_json">Generate JSON</button>
+                    <button type="button" id="generate_html">Generate HTML</button>
+                </div>
+            </form>
+        </div>
+        <div id="intro-results">
+
+        </div>
+
+        <a href="#" id="reset-page-link">Reset page? (Reset Form)</a>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="projects/HTMLInclude-master/HTMLInclude.min.js"></script>
+    </footer>
+
+    <script src="scripts/introduction.js"></script>
+    <script src="scripts/generate_json.js"></script>
+    <script src="scripts/generate_html.js"></script>
+    <script src="scripts/load_image.js"></script>
+  </body>
+</html>
