@@ -186,13 +186,20 @@ main {
     display: inline-block;
     background-color: #fff;
     border: 2px solid #ccc;
-    padding: 60px 20px;
+    padding: 15px 15px 60px 15px;
     margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
 }
 .gallery_box img {
     width: auto;
     height: 300px;
-    border-radius: 8px;
+    display: block;
+    /*border-radius: 8px;*/
+}
+.gallery_box:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
 .donate_box {
