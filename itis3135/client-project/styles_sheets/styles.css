@@ -154,6 +154,20 @@ main {
     margin: 10px;
     max-width: 280px;
 }
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+.card a {
+    text-decoration: none;
+    color: #9b1c1c;
+    font-weight: 700;
+}
+.card a:hover {
+    text-decoration: underline;
+}
 
 .gallery_placeholder {
     margin: 30px auto;
@@ -174,6 +188,11 @@ main {
     border: 2px solid #ccc;
     padding: 60px 20px;
     margin: 10px;
+}
+.gallery_box img {
+    width: auto;
+    height: 300px;
+    border-radius: 8px;
 }
 
 .donate_box {
