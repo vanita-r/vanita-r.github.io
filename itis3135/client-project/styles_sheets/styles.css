@@ -143,6 +143,10 @@ main {
 .card_container {
     text-align: center;
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
@@ -167,6 +171,26 @@ main {
 }
 .card a:hover {
     text-decoration: underline;
+}
+.card_container #tote_bags:hover, #stickers:hover, #keychains:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.card #tote_bags img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.card #stickers img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.card #keychains img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
 }
 
 .gallery_placeholder {
