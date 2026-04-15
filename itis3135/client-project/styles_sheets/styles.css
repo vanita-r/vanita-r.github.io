@@ -277,6 +277,7 @@ main {
     height: 300px;
     display: block;
     /*border-radius: 8px;*/
+    cursor: pointer;
 }
 .gallery_box:hover {
     transform: scale(1.05);
