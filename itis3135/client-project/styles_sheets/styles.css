@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border_box;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     font-family: Arial, Helvetica, sans_serif;
     background-color: #f7f7f7;
     color: #111;
@@ -46,10 +48,14 @@ h3 {
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: auto;
     object-fit: cover;
     border-radius: 50%;
+}
+.logo:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
 .nav_links {
@@ -61,7 +67,6 @@ h3 {
     margin: 0 40px;
     gap: 60px;
 }
-
 .nav_links a {
     text-decoration: none;
     color: #111;
@@ -69,9 +74,9 @@ h3 {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .nav_links a:hover {
     color: #9b1c1c;
+    text-decoration: underline;
 }
 
 .active {
@@ -105,32 +110,80 @@ h3 {
     color: #fff;
 }
 
+/*#homepage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/asa-homepage.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    margin-left: 0;
+    margin-right: 0;
+}*/
+#homepage {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px;
+}
+
+.homepage_hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('../images/asa-homepage.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 250px 20px 100px;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 50px 20px;
+    color: black;
+    /*padding: 60px 20px;*/
 }
 
-.hero {
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.hero_logo {
-    width: 140px;
+.top_title {
+    color: #d46767;
+    font-size: 3rem;
+    font-weight: 800;
     margin-bottom: 20px;
 }
 
+.hero, .main_section {
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+}
+.hero_logo {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
 .hero_heading {
     font-size: 4rem;
     margin-bottom: 12px;
     font-weight: 800;
 }
-
 .hero_text p {
     max-width: 700px;
     margin: 0 auto;
 }
+
+.hero_panel {
+    padding-bottom: 100px;
+}
+
+/*.main_section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../images/asa-homepage.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 60px 20px;
+    width: 100%;
+}*/
 
 .about_membership,
 .highlights,
@@ -138,6 +191,10 @@ main {
 .page_content {
     margin-top: 50px;
     text-align: center;
+}
+.about_membership p {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .card_container {
@@ -239,14 +296,18 @@ footer {
     padding: 25px;
     border-top: 2px solid #ddd;
     margin-top: 40px;
-    color: #d46767;
+    color: #DC433B;
 }
 footer a {
-    color: #d17a7a;
+    color: #DC433B;
     text-decoration: none;
 }
 footer a:hover {
     text-decoration: underline;
+}
+#designer-link {
+    color: #DC433B;
+
 }
 
 .visually-hidden {

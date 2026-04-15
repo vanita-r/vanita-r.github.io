@@ -87,3 +87,12 @@ footer {
     color: white;
     padding: 15px;
 }
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #f7cecc;
+    text-decoration: underline;
+    font-weight: bold;
+}
