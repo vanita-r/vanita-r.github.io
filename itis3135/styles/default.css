@@ -84,6 +84,17 @@ hr {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
+main a {
+    color: #A24F4E;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #C58882;
+    text-decoration: underline;
+}
+
 /*Introduction*/
 .intro-photo {
     text-align: center;
