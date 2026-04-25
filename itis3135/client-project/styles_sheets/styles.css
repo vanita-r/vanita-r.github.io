@@ -284,6 +284,7 @@ main {
     transition: transform 0.3s ease;
 }
 
+/* Donate Page Styles */
 .donate_box {
     max-width: 600px;
     margin: 30px auto;
@@ -292,6 +293,70 @@ main {
     border: 2px solid #ddd;
 }
 
+.FAQ_box {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+}
+.FAQ_box_h3 {
+    color: #9b1c1c;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+#accordion h4 {
+    color: #9b1c1c;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.FAQ_box p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+.FAQ_box article {
+    margin-bottom: 20px;
+}
+.FAQ_box article p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.FAQ_box article a {
+    color: #9b1c1c;
+    text-decoration: none;
+}
+.FAQ_box article a:hover {
+    text-decoration: underline;
+}
+.FAQ_box a {
+    color: #9b1c1c;
+    text-decoration: none;
+}
+.FAQ_box a:hover {
+    text-decoration: underline;
+}
+
+.ui-accordion .ui-accordion-header {
+    background-color: #FCEDED;
+    border: 2px solid #d46767;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.ui-accordion .ui-accordion-header:active {
+    background-color: #d46767;
+    color: #fff;
+}
+.ui-accordion .ui-accordion-content {
+    border: 2px solid #d46767;
+    border-top: none;
+    padding: 15px;
+    background-color: #fff;
+}
+
+
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 25px;
