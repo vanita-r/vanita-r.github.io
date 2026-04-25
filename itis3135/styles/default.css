@@ -58,11 +58,11 @@ footer a:hover {
     text-decoration: underline;
 }
 
-#design-firm {
+#design-firm, #copyright-link {
     color: black;
     font-weight: 400;
 }
-#design-firm:hover {
+#design-firm:hover, #copyright-link:hover {
     color: #A24F4E;
     text-decoration: underline;
 }
