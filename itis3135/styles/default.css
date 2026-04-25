@@ -60,6 +60,11 @@ footer a:hover {
 
 #design-firm {
     color: black;
+    font-weight: 400;
+}
+#design-firm:hover {
+    color: #A24F4E;
+    text-decoration: underline;
 }
 
 body {
@@ -234,11 +239,11 @@ main a:hover {
 }
 
 #intro-form .buttons button[type="reset"] {
-    background-color: #DF928E;
+    background-color: #73413C;
 }
 
 #intro-form .buttons button[type="reset"]:hover {
-    background-color: #C58882;
+    background-color: #A24F4E;
 }
 
 #intro-form .buttons button[type="button"] {
