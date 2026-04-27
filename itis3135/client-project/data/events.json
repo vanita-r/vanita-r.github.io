@@ -1,0 +1,29 @@
+{
+    "events": [
+        {
+            "title": "Hello Asia",
+            "description": "3rd Annual Cultural Event celebrating the richness of Asian cultures through tradition, performance, and community engagement.",
+            "date": "March 1, 2026"
+        },
+        {
+            "title": "Jubilee",
+            "description": "Hosted by ASA's interns, join us next Wednesday for an event filled with fun, friends, and heated debate.",
+            "date": "April 15, 2026"
+        },
+        {
+            "title": "ASA Spring Intern Bake Sale",
+            "description": "ASA is officially celebrating with a new bake sale. Come support our interns by grabbing a sweet treat this Thursday inside the Student Union!",
+            "date": "April 2, 2026"
+        },
+        {
+            "title": "Hello Asia Bake Sale",
+            "description": "Hello Asia fundraiser week! Come support ASA and KASA as we prepare for Hello Asia.",
+            "date": "February 26, 2026"
+        },
+        {
+            "title": "Sweetheart Social",
+            "description": "Join TSO and ASA in making real flower bouqets! Snacks, drinks & mini games will be provided!",
+            "date": "February 19, 2026"
+        }
+    ]
+}
