@@ -437,17 +437,17 @@ footer {
     padding: 25px;
     border-top: 2px solid #ddd;
     margin-top: 40px;
-    color: #DC433B;
+    color: #9b1c1c;
 }
 footer a {
-    color: #DC433B;
+    color: #9b1c1c;
     text-decoration: none;
 }
 footer a:hover {
     text-decoration: underline;
 }
 #designer-link {
-    color: #DC433B;
+    color: #9b1c1c;
 
 }
 
