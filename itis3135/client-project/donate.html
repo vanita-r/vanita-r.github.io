@@ -1,99 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Metadata and stylesheet/script links -->
-    <meta charset="UTF-8">
-    <title>CLT ASA | Donate</title>
-    <link rel="stylesheet" href="styles_sheets/styles.css">
+    <head>
+        <!-- Metadata and stylesheet/script links -->
+        <meta charset="UTF-8">
+        <title>CLT ASA | Donate</title>
+        <link rel="stylesheet" href="styles_sheets/styles.css">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <script src="scripts/accordion.js"></script> <!-- TODO: Implement main.js for jQuery UI accordion -->
-    
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
-</head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <script src="scripts/accordion.js"></script> <!-- TODO: Implement main.js for jQuery UI accordion -->
+        
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
+    <body>
 
-<!-- Header with navigation and page title -->
-<header>
-    <!-- Navigation section -->
-    <nav class="navbar">
-        <!-- Logo that links to homepage -->
-        <a href="index.html">
-            <img src="images/asa-logo.png" alt="ASA logo" class="logo">
-        </a>
+    <!-- Header with navigation and page title -->
+    <header>
+        <!-- Main navigation bar -->
+            <div data-include="components/header.html"></div>
+            <script src="HTMLInclude-master/HTMLInclude.min.js"></script>
 
-        <!-- Navigation links -->
-        <ul class="nav_links">
-            <li><a href="events.html">Events</a></li>
-            <li><a href="merch.html">Merch</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="donate.html" class="active">Donate</a></li>
-        </ul>
+        <!-- Page title -->
+        <h1 class="top_title">CLT ASA | Donate</h1>
+    </header>
 
-        <!-- Join ASA call-to-action -->
-        <section class="nav_right">
-            <h3 class="visually-hidden">Join ASA section</h3>
-            <p class="join_text">Interested in joining?</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfquRylf0yEsQntorscVax1dkRoEpHx4vk98_01V0bVPEd_1g/viewform" target="_blank" class="join_btn">Join ASA</a>
+    <!-- Main donate page content -->
+    <main class="page_content">
+
+        <!-- Donation section heading -->
+        <h2>Support ASA</h2>
+
+        <!-- Donation information and button -->
+        <section class="donate_box">
+            <h3 class="visually-hidden">Donation section</h3>
+            <p>Your donations help fund events and activities.</p>
+            <a href="https://account.venmo.com/u/unccasa" class="donate_btn" target="_blank">Donate Here (Venmo)</a>
+            <a href="https://cash.app/$shouachang3" class="donate_btn" target="_blank">Donate Here (Cash App)</a>
         </section>
-    </nav>
 
-    <!-- Page title -->
-    <h1 class="top_title">CLT ASA | Donate</h1>
-</header>
+        <!-- FAQ section with jQuery accordion -->
+        <section class="FAQ_box">
+            <h3 class="FAQ_box_h3">Frequently Asked Questions</h3>
 
-<!-- Main donate page content -->
-<main class="page_content">
+            <section id="accordion">
+                <h4 class="accordion-h4">Where does my donation go?</h4>
+                <article>
+                    <h5 class="visually-hidden">Where does my donation go?</h5>
+                    <p>All donations go towards funding our events, activities, and initiatives that support the Asian Student Association at UNC Charlotte.</p>
+                </article>
 
-    <!-- Donation section heading -->
-    <h2>Support ASA</h2>
+                <h4 class="accordion-h4">How can I make a donation?</h4>
+                <article>
+                    <h5 class="visually-hidden">How can I make a donation?</h5>
+                    <p>You can make a donation through our Venmo or Cash App.</p>
+                </article>
 
-    <!-- Donation information and button -->
-    <section class="donate_box">
-        <h3 class="visually-hidden">Donation section</h3>
-        <p>Your donations help fund events and activities.</p>
-        <a href="https://account.venmo.com/u/unccasa" class="donate_btn" target="_blank">Donate Here (Venmo)</a>
-    </section>
-
-    <!-- FAQ section with jQuery accordion -->
-    <section class="FAQ_box">
-        <h3 class="FAQ_box_h3">Frequently Asked Questions</h3>
-
-        <section id="accordion">
-            <h4 class="accordion-h4">Where does my donation go?</h4>
-            <article>
-                <h5 class="visually-hidden">Where does my donation go?</h5>
-                <p>All donations go towards funding our events, activities, and initiatives that support the Asian Student Association at UNC Charlotte.</p>
-            </article>
-
-            <h4 class="accordion-h4">How can I make a donation?</h4>
-            <article>
-                <h5 class="visually-hidden">How can I make a donation?</h5>
-                <p>You can make a donation through our Venmo or Cash App.</p>
-            </article>
-
-            <h4 class="accordion-h4">What if I have more questions?</h4>
-            <article>
-                <h5 class="visually-hidden">What if I have more questions?</h5>
-                <p>If you have any additional questions about donating or our organization, please feel free to contact us at <a href="mailto:unc.charlotte.asa@gmail.com">unc.charlotte.asa@gmail.com</a></p>
-            </article>
+                <h4 class="accordion-h4">What if I have more questions?</h4>
+                <article>
+                    <h5 class="visually-hidden">What if I have more questions?</h5>
+                    <p>If you have any additional questions about donating or our organization, please feel free to contact us at <a href="mailto:unc.charlotte.asa@gmail.com">unc.charlotte.asa@gmail.com</a></p>
+                </article>
+            </section>
         </section>
-    </section>
 
-</main>
+    </main>
 
-<!-- Footer with extra links -->
-<footer>
-    <p>&copy; 2026 UNC Charlotte ASA; Designed by <a href="../index.html" target="_blank" id="designer-link">Vanita Rabsatt</a></p>
-    <p>
-        <a href="https://www.instagram.com/cltasa/" target="_blank">Instagram</a> |
-        <a href="https://ninerengage.charlotte.edu/organization/asian-student-association" target="_blank">NinerEngage</a> |
-        <a href="https://linktr.ee/CLTASA" target="_blank">Linktree</a>
-    </p>
-</footer>
+    <!-- Footer section with copyright and social links -->
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="HTMLInclude-master/HTMLInclude.min.js"></script>
+    </footer>
 
-</body>
+    </body>
 </html>
